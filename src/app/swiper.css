@@ -1,0 +1,44 @@
+/* Estilo para o botão de navegação anterior (prev) */
+.swiper-button-prev {
+    --swiper-theme-color: #FEF7F9; /* Altere a cor conforme necessário */
+    background-color: #A13BDE;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  
+  /* Estilo para o botão de navegação seguinte (next) */
+  .swiper-button-next {
+    --swiper-theme-color: #FEF7F9; /* Altere a cor conforme necessário */
+    background-color: #A13BDE;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 24px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-button-prev::after {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .swiper-button-next::after {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .swiper-pagination-bullet {
+    --swiper-pagination-bullet-inactive-color: white;
+    --swiper-pagination-bullet-inactive-opacity: 80%;
+  }
+  
+  .swiper-pagination-bullet-active {
+    --swiper-pagination-color: #e40046;
+  }
+  

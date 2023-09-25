@@ -2,26 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+#anchor {
+    position: relative;
+    text-decoration: none; /* Remova a decoração de texto padrão */
+    color: inherit; /* Mantenha a cor do texto padrão */
   }
-}
+  
+  #anchor::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Ajuste a altura da borda conforme necessário */
+    background-color: #FEF7F9; /* Cor da borda */
+    transition: width 0.5s ease-in-out;
+  }
+  
+  #anchor:hover::before {
+    width: 100%;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .rise {
+    animation-play-state: paused;
+    animation-fill-mode: none;
+    visibility: hidden;
+    animation-delay: 1ms !important;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:hover,
+  select:-webkit-autofill,
+  select:-webkit-autofill:focus,
+  select:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0 100px #fff inset !important;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+    background-color: #A13BDE;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #717171;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #FEF7F9;
+  }
+  
+  body::-webkit-scrollbar {
+    height: 1rem;
+    width: 12px;
+  }
+  
