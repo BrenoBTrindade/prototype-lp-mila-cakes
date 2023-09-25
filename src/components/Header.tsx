@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   return (
@@ -13,6 +14,7 @@ export default function Header() {
           </a>
         ))}
       </div>
+      <MobileMenu />
     </header>
   );
 }
