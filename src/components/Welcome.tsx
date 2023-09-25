@@ -15,8 +15,8 @@ import {
 
 export default function Welcome() {
   return (
-    <section className="flex justify-center my-10 flex-col items-center">
-      <p className="text-2xl text-text w-1/2">
+    <section className="flex justify-center my-10 flex-col items-center max-lg:w-[95%] max-lg:mx-auto max-lg:h-[300px]">
+      <p className="xl:text-2xl text-text xl:w-1/2">
         Seja bem-vindo à Mila Cakes, a confeitaria dos sonhos onde a doçura
         ganha vida! Aqui, cada mordida é uma experiência única e deliciosa que
         fará você se apaixonar pelo mundo dos doces
@@ -32,12 +32,12 @@ export default function Welcome() {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Mousewheel, Keyboard, Autoplay]}
-        className="mySwiper max-lg:mt-10 max-lg:h-[310px] max-lg:w-[350px] xl:my-20 xl:h-[400px] xl:w-[800px]"
+        className="mySwiper max-lg:mt-10 max-lg:h-[150px] max-lg:w-[370px] xl:my-20 xl:h-[400px] xl:w-[800px]"
       >
         {cakes.map(({ src, alt }, i) => (
           <SwiperSlide key={i}>
             <Image
-              className="w-[650px] h-[400px]"
+              className="xl:w-[650px] xl:h-[400px] max-lg:w-[250px] max-lg:h-[150px]"
               src={src}
               alt={alt}
               width={900}

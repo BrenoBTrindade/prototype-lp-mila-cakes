@@ -6,28 +6,28 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
 
-export default function CupCakesSwiper() {
+export default function CupCakesSwiperMobile() {
   return (
-    <div className="text-text max-lg:hidden">
-      <div className="text-text flex my-10 flex-col text-2xl w-[60%] mx-auto">
-        <p className="w-[60%]">
+    <div className="text-text lg:hidden">
+      <div className="text-text flex my-10 flex-col mx-auto">
+        <p>
           Cupcakes Gourmet: Experimente nossa coleção de cupcakes delicadamente
           decorados, uma explosão de sabores em cada mordida.
         </p>
       </div>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         loop={true}
-        spaceBetween={-50}
+        spaceBetween={50}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper w-[65%] h-[310px] "
+        className="mySwipe h-[200px] "
       >
         {cupCakes.map(({ src, alt }, i) => (
           <SwiperSlide key={i}>
             {" "}
             <Image
-              className="select-none rounded-xl shadow-md shadow-black/60 h-[300px] w-[300px]"
+              className="select-none rounded-xl shadow-md shadow-black/60 h-[200px] w-[200px]"
               src={src}
               alt={alt}
               width={300}
