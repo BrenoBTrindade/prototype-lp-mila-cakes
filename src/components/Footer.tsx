@@ -47,6 +47,6 @@ export default function Footer() {
 }
 
 const networks = [
-  { src: "/icons8-insta.svg", href: "https://www.instagram.com/velfibra" },
-  { src: "/icons8-facebook.svg", href: "https://www.facebook.com/velfibra" },
+  { src: "/icons8-insta.svg", href: "https://www.instagram.com/mila_cakes33" },
+  { src: "/icons8-facebook.svg", href: "https://www.facebook.com/milacakes33" },
 ];

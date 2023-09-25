@@ -11,7 +11,7 @@ export default function Order() {
           <button className="hover:scale-105 duration-500" key={i}>
             {" "}
             <Image
-              className="rounded-xl shadow-black/60 shadow-md max-lg:w-[170px] h-[100px]"
+              className="rounded-xl shadow-black/60 shadow-md max-lg:w-[170px] max-lg:h-[100px]"
               src={src}
               alt={alt}
               width={550}
